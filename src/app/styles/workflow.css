@@ -1,0 +1,134 @@
+.workflow {
+  width: 100%;
+  padding: 120px 0;
+  background-color: #5543d1;
+}
+
+.workflow-container {
+  max-width: 81.94%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  /* gap: 6.95%; */
+}
+
+.workflow-container img {
+  width: 480px;
+}
+
+.workflow-right h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.workflow-container p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.workflow-p1 {
+  margin-bottom: 16px;
+}
+
+.workflow-container button {
+  padding: 16px 32px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 100px;
+  background-color: #5543d1;
+  margin-top: 48px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.workflow-container button:hover{
+  border-color: #00d1cc;
+  color: #00d1cc;
+}
+
+@media screen and (max-width: 1200px) {
+  .workflow {
+    padding: 88px 0;
+  }
+
+  .workflow-right h2 {
+    font-size: 46px;
+    line-height: 60px;
+    margin-bottom: 28px;
+  }
+
+  .workflow-container button {
+    margin-top: 42px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .workflow {
+    padding: 64px 0;
+  }
+
+  .workflow-container {
+    flex-direction: column;
+    max-width: 86%;
+  }
+
+  .workflow-container img {
+    width: 100%;
+  }
+
+  .workflow-right h2 {
+    font-size: 54px;
+    margin-bottom: 24px;
+  }
+
+  .workflow-container button {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workflow {
+    padding: 44px 0;
+  }
+
+  .workflow-right h2 {
+    font-size: 42px;
+    margin-top: -16px;
+    margin-bottom: 16px;
+  }
+
+  .workflow-right p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .workflow-p1 {
+    margin-bottom: 12px;
+  }
+
+  .workflow-container button {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .workflow {
+    padding: 36px 0;
+  }
+
+  .workflow-right h2 {
+    font-size: 36px;
+    margin-top: -54px;
+    margin-bottom: 14px;
+  }
+
+  .workflow-container button {
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,170 @@
+.hero {
+  padding: 68px 0 80px 0;
+  background-color: #17142e;
+  color: #fff;
+  width: 100%;
+  z-index: 20;
+}
+
+.hero-container {
+  max-width: 81.94%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-p1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  width: 63.73%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  text-align: center;
+  width: 64.49%;
+  margin-bottom: 24px;
+}
+
+.hero-p2 {
+  font-weight: 300;
+  width: 62.46%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 48px;
+}
+
+.hero-container button {
+  padding: 16px 32px;
+  background-color: #00d1cc;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s;
+  margin-bottom: 64px;
+  z-index: 30;
+  cursor: pointer;
+}
+
+.hero-container button:hover {
+  background-color: #5543d1;
+}
+
+.hero-container img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    padding: 56px 0 72px 0;
+  }
+
+  .hero-p1,
+  .hero-p2,
+  .hero h1 {
+    width: 80%;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+
+  .hero button {
+    margin-bottom: 54px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    padding: 44px 0 64px 0;
+  }
+
+  .hero-container {
+    max-width: 86%;
+  }
+
+  .hero h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .hero-p2 {
+    margin-bottom: 36px;
+  }
+
+  .hero button {
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 36px 0 44px 0;
+  }
+
+  .hero-container {
+    align-items: flex-start;
+  }
+
+  .hero-p1,
+  .hero-p2,
+  .hero h1 {
+    text-align: left;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .hero-p2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .hero button {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    padding: 28px 0 36px 0;
+  }
+
+  .hero-p1 {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .hero-p2 {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .hero button {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+}
