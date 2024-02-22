@@ -23,8 +23,8 @@ function Hero() {
           <p className="hero-p2" data-aos="fade-up" data-aos-offset="0" data-aos-delay="800">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
           </p>
-          <button data-aos="fade-up">Send Checks for Free</button>
-          <Image src={image} alt="hero-image" data-aos="fade-up" />
+          <button data-aos="fade-up" data-aos-offset="0">Send Checks for Free</button>
+          <Image src={image} alt="hero-image" data-aos="fade-up" data-aos-offset="0"/>
         </div>
       </section>
       <Image src={vector} alt="vector" style={{ position: 'absolute', top: '-114px', right: '0', zIndex: '0' }} />
