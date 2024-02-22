@@ -30,23 +30,6 @@ function Footer() {
               <Image src={logo} alt="footer-logo" className="footer-logo" />
             </Link>
             <p>Transform the way companies manage payments electronically without the high payment fees.</p>
-            <div className="socmed-container">
-              <Link href={'#'}>
-                <Image src={fb} alt="facebook" />
-              </Link>
-              <Link href={'#'}>
-                <Image src={twt} alt="twitter" />
-              </Link>
-              <Link href={'#'}>
-                <Image src={linkedin} alt="linkedin" />
-              </Link>
-              <Link href={'#'}>
-                <Image src={yt} alt="youtube" />
-              </Link>
-              <Link href={'#'}>
-                <Image src={ig} alt="instagram" />
-              </Link>
-            </div>
           </div>
           <div className="footer-bottom-right">
             <div>
@@ -67,6 +50,26 @@ function Footer() {
               <Link href={'#'}>Privacy Policy</Link>
             </div>
           </div>
+        </div>
+        <div className="footer-bottom-bottom">
+          <div className="socmed-container">
+            <Link href={'#'}>
+              <Image src={fb} alt="facebook" />
+            </Link>
+            <Link href={'#'}>
+              <Image src={twt} alt="twitter" />
+            </Link>
+            <Link href={'#'}>
+              <Image src={linkedin} alt="linkedin" />
+            </Link>
+            <Link href={'#'}>
+              <Image src={yt} alt="youtube" />
+            </Link>
+            <Link href={'#'}>
+              <Image src={ig} alt="instagram" />
+            </Link>
+          </div>
+          <p>Copyright Chexks 2022 © All rights reserved.</p>
         </div>
       </div>
     </section>

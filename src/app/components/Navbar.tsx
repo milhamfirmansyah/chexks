@@ -10,7 +10,9 @@ function Navbar() {
     <section className="navbar">
       <div className="navbar-container">
         <div className="navbar-left">
-          <Image src={logo} alt="logo" />
+          <Link href={'#'}>
+            <Image src={logo} alt="logo" />
+          </Link>
         </div>
         <div className="navbar-right">
           <button>Send Checks For Free</button>

@@ -20,7 +20,8 @@
 
 .company-container div {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 8.82%;
 }
 
 .first-child {
@@ -28,7 +29,7 @@
 }
 
 .company-container div img {
-  width: 13.56%;
+  width: 160px;
 }
 
 @keyframes marque-left {
@@ -36,7 +37,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-500%);
   }
 }
 
@@ -45,16 +46,17 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(500%);
   }
 }
 
 .left {
-  animation: marque-left 8s linear infinite;
+  animation: marque-left 40s linear infinite;
 }
 
 .right {
-  animation: marque-right 8s linear infinite;
+  animation: marque-right 40s linear infinite;
+  flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 1200px) {
