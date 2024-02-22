@@ -3,7 +3,6 @@ import '../styles/navbar.css';
 import logo from '../assets/chexks_logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-import decoration from '../assets/Group 1362.svg';
 
 function Navbar() {
   return (

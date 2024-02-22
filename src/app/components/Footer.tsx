@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import logo from '../assets/chexks_logo.svg';
@@ -7,52 +8,85 @@ import twt from '../assets/twitter.svg';
 import linkedin from '../assets/linkedin.svg';
 import yt from '../assets/youtube.svg';
 import ig from '../assets/instagram.svg';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Footer() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="footer">
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-top-left">
-            <h2>
+            <h2 data-aos="fade-up" data-aos-offset="0">
               Choose invoices to pay, <span style={{ color: '#00D1CC' }}>we do the rest.</span>
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p data-aos="fade-up" data-aos-offset="0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            </p>
           </div>
-          <div className="footer-top-right">
+          <div className="footer-top-right" data-aos="fade-up" data-aos-offset="0">
             <input type="text" placeholder="Enter your email" />
             <button>Try For Free</button>
           </div>
         </div>
         <div className="footer-bottom">
           <div className="footer-bottom-left">
-            <Link href={'#'}>
+            <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
               <Image src={logo} alt="footer-logo" className="footer-logo" />
             </Link>
-            <p>Transform the way companies manage payments electronically without the high payment fees.</p>
+            <p data-aos="fade-up" data-aos-offset="0">
+              Transform the way companies manage payments electronically without the high payment fees.
+            </p>
           </div>
           <div className="footer-bottom-right">
             <div>
-              <Link href={'#feature'}>Features</Link>
-              <Link href={'#'}>Industries</Link>
-              <Link href={'#'}>Integrations</Link>
-              <Link href={'#'}>Solutions</Link>
+              <Link href={'#feature'} data-aos="fade-up" data-aos-offset="0">
+                Features
+              </Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Industries
+              </Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Integrations
+              </Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Solutions
+              </Link>
             </div>
             <div>
-              <Link href={'#'}>Roles</Link>
-              <Link href={'#'}>Pricing</Link>
-              <Link href={'#'}>Company</Link>
-              <Link href={'#'}>Customers</Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Roles
+              </Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Pricing
+              </Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Company
+              </Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Customers
+              </Link>
             </div>
             <div>
-              <Link href={'#'}>About Us</Link>
-              <Link href={'#'}>Terms of Service</Link>
-              <Link href={'#'}>Privacy Policy</Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                About Us
+              </Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Terms of Service
+              </Link>
+              <Link href={'#'} data-aos="fade-up" data-aos-offset="0">
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>
         <div className="footer-bottom-bottom">
-          <div className="socmed-container">
+          <div className="socmed-container" data-aos="fade-up" data-aos-offset="0">
             <Link href={'#'}>
               <Image src={fb} alt="facebook" />
             </Link>
@@ -69,7 +103,9 @@ function Footer() {
               <Image src={ig} alt="instagram" />
             </Link>
           </div>
-          <p>Copyright Chexks 2022 © All rights reserved.</p>
+          <p data-aos="fade-up" data-aos-offset="0">
+            Copyright Chexks 2022 © All rights reserved.
+          </p>
         </div>
       </div>
     </section>

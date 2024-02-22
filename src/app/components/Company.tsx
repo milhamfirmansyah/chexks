@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import logo1 from '../assets/company1.svg';
@@ -5,12 +6,21 @@ import logo2 from '../assets/company2.svg';
 import logo3 from '../assets/company3.svg';
 import logo4 from '../assets/company4.svg';
 import logo5 from '../assets/company5.svg';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Company() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="company">
       <div className="company-container">
-        <h4>Trusted by many companies.</h4>
+        <h4 data-aos="zoom-in" data-aos-offset="0">
+          Trusted by many companies.
+        </h4>
         <div className="first-child right">
           <Image src={logo1} alt="logo-company-1" />
           <Image src={logo2} alt="logo-company-2" />
